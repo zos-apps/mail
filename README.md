@@ -13,10 +13,27 @@ npm install github:zos-apps/mail
 ## Usage
 
 ```tsx
-import ZMail from '@zos-apps/mail';
+import App from '@zos-apps/mail';
 
-function App() {
-  return <ZMail />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.mail",
+    "name": "Mail",
+    "icon": "✉️",
+    "category": "productivity",
+    "permissions": ["network"],
+    "installable": true
+  }
 }
 ```
 
