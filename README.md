@@ -1,8 +1,12 @@
 # ✉️ Mail
 
+[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/zos-apps/mail/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-online-purple.svg)](https://zos-apps.github.io/mail)
+
 > Email composer with rich formatting
 
-Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
+**[Documentation](https://zos-apps.github.io/mail)** • **[App Store](https://zos-apps.github.io/app-store)** • **[All Apps](https://github.com/zos-apps)**
 
 ## Installation
 
@@ -10,37 +14,53 @@ Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
 npm install github:zos-apps/mail
 ```
 
+Or install via the [zOS App Store](https://zos-apps.github.io/app-store).
+
 ## Usage
 
 ```tsx
-import App from '@zos-apps/mail';
+import Mail from '@zos-apps/mail';
 
-function MyApp() {
-  return <App />;
+function App() {
+  return <Mail />;
 }
 ```
 
-## Package Spec
+## Features
 
-App metadata is defined in `package.json` under the `zos` field:
+- Native zOS window integration
+- Dark mode support
+- Keyboard shortcuts
+- Context menu actions
+- Menu bar integration
 
-```json
-{
-  "zos": {
-    "id": "ai.hanzo.mail",
-    "name": "Mail",
-    "icon": "✉️",
-    "category": "productivity",
-    "permissions": ["network"],
-    "installable": true
-  }
-}
-```
+## Keyboard Shortcuts
 
-## Version
+No shortcuts defined.
 
-v4.2.0
+## Context Menu
+
+Right-click the app icon for:
+- **Open** - Launch the app
+- **Open in New Window** - Open a new instance
+- **Get Info** - View app details
+- **Show in Finder** - Locate app files
+
+## Menu Bar
+
+When active, adds menus: Mail, File, Edit, View, Window, Help
+
+## Permissions
+
+- `network`
+
+## Links
+
+- [Documentation](https://zos-apps.github.io/mail)
+- [GitHub Repository](https://github.com/zos-apps/mail)
+- [Report Issues](https://github.com/zos-apps/mail/issues)
+- [All zOS Apps](https://github.com/zos-apps)
 
 ## License
 
-MIT © Hanzo AI
+MIT © [Hanzo AI](https://hanzo.ai)
